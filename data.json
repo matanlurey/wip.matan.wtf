@@ -1,0 +1,10 @@
+{
+  "$schema": "./schema.json",
+  "games": [
+    {
+      "name": "Star Wars: Jedi Survivor",
+      "link": "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor",
+      "progress": "not started"
+    }
+  ]
+}

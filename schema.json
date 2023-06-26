@@ -1,0 +1,40 @@
+{
+  "$id": "https://wip.matan.wtf/schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "What Matan is working on",
+  "type": "object",
+  "properties": {
+    "games": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "link": {
+            "type": "string",
+            "format": "uri"
+          },
+          "progress": {
+            "$ref": "#/$defs/progress"
+          }
+        },
+        "required": [
+          "name",
+          "link",
+          "progress"
+        ]
+      }   
+    }
+  },
+  "$defs": {
+    "progress": {
+      "enum": [
+        "not started",
+        "in progress",
+        "done"
+      ]
+    }
+  }
+}
