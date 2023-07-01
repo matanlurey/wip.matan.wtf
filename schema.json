@@ -4,7 +4,7 @@
   "description": "What Matan is working on",
   "type": "object",
   "properties": {
-    "games": {
+    "doing": {
       "type": "array",
       "items": {
         "type": "object",
@@ -18,12 +18,20 @@
           },
           "progress": {
             "$ref": "#/$defs/progress"
+          },
+          "type": {
+            "enum": [
+              "video_game",
+              "board_game",
+              "coding_project"
+            ]
           }
         },
         "required": [
           "name",
           "link",
-          "progress"
+          "progress",
+          "type"
         ]
       }   
     }
@@ -31,8 +39,8 @@
   "$defs": {
     "progress": {
       "enum": [
-        "not started",
-        "in progress",
+        "not_started",
+        "in_progress",
         "done"
       ]
     }

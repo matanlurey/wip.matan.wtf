@@ -1,10 +1,17 @@
 {
   "$schema": "./schema.json",
-  "games": [
+  "doing": [
     {
       "name": "Star Wars: Jedi Survivor",
       "link": "https://store.steampowered.com/app/1774580/STAR_WARS_Jedi_Survivor",
-      "progress": "not started"
+      "progress": "in_progress",
+      "type": "video_game"
+    },
+    {
+      "name": "Star Wars: The Deck Building Game",
+      "link": "https://github.com/matanlurey/swdbg",
+      "progress": "not_started",
+      "type": "coding_project"
     }
   ]
 }
